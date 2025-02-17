@@ -1,3 +1,21 @@
+/**
+* https://github.com/artemsites/ress.css
+* START My
+*/
+:root {
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  text-decoration: none;
+}
+/**
+* END My
+*/
+
 /* resset.dev • v5.0.2 */
 
 /* # =================================================================
@@ -31,8 +49,8 @@ html {
 }
 
 /* # =================================================================
-   # General elements
-   # ================================================================= */
+     # General elements
+     # ================================================================= */
 
 hr {
   overflow: visible; /* Show the overflow in Edge and IE */
@@ -116,24 +134,24 @@ iframe {
 }
 
 /* # =================================================================
-   # Forms
-   # ================================================================= */
+     # Forms
+     # ================================================================= */
 
 input {
   border-radius: 0;
 }
 
-[type='number']::-webkit-inner-spin-button,
-[type='number']::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto; /* Correct the cursor style of increment and decrement buttons in Chrome */
 }
 
-[type='search'] {
+[type="search"] {
   -webkit-appearance: textfield; /* Correct the odd appearance in Chrome and Safari */
   outline-offset: -2px; /* Correct the outline style in Safari */
 }
 
-[type='search']::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; /* Remove the inner padding in Chrome and Safari on macOS */
 }
 
@@ -165,34 +183,34 @@ select {
 
 /* Apply cursor pointer to button elements */
 button,
-[type='button'],
-[type='reset'],
-[type='submit'],
-[role='button'] {
+[type="button"],
+[type="reset"],
+[type="submit"],
+[role="button"] {
   cursor: pointer;
 }
 
 /* Remove inner padding and border in Firefox 4+ */
 button::-moz-focus-inner,
-[type='button']::-moz-focus-inner,
-[type='reset']::-moz-focus-inner,
-[type='submit']::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
 /* Replace focus style removed in the border reset above */
 button:-moz-focusring,
-[type='button']::-moz-focus-inner,
-[type='reset']::-moz-focus-inner,
-[type='submit']::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   outline: 1px dotted ButtonText;
 }
 
 button,
-html [type='button'], /* Prevent a WebKit bug where (2) destroys native `audio` and `video`controls in Android 4 */
-[type='reset'],
-[type='submit'] {
+  html [type='button'], /* Prevent a WebKit bug where (2) destroys native `audio` and `video`controls in Android 4 */
+  [type='reset'],
+  [type='submit'] {
   -webkit-appearance: button; /* Correct the inability to style clickable types in iOS */
 }
 
@@ -249,8 +267,8 @@ legend {
 }
 
 /* # =================================================================
-   # Specify media element style
-   # ================================================================= */
+     # Specify media element style
+     # ================================================================= */
 
 img {
   border-style: none; /* Remove border when inside `a` element in IE 8/9/10 */
@@ -262,11 +280,11 @@ progress {
 }
 
 /* # =================================================================
-   # Accessibility
-   # ================================================================= */
+     # Accessibility
+     # ================================================================= */
 
 /* Specify the progress cursor of updating elements */
-[aria-busy='true'] {
+[aria-busy="true"] {
   cursor: progress;
 }
 
@@ -276,6 +294,6 @@ progress {
 }
 
 /* Specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements */
-[aria-disabled='true'] {
+[aria-disabled="true"] {
   cursor: default;
 }
