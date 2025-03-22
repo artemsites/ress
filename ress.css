@@ -1,28 +1,15 @@
 /**
 * https://github.com/artemsites/ress.css
-* START My
 */
+
+/* # =================================================================
+   # Global selectors
+   # ================================================================= */
 :root {
-  color-scheme: light dark;
-  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-a {
-  text-decoration: none;
-}
-
-img {
-  user-select: none;
-}
-
-/* resset.dev • v5.0.2 */
-
-/* # =================================================================
- # Global selectors
- # ================================================================= */
 
 html {
   box-sizing: border-box;
@@ -39,7 +26,12 @@ html {
   background-repeat: no-repeat;
   /* Set `background-repeat: no-repeat` to all elements and pseudo elements */
   box-sizing: border-box;
-  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, opacity 0.1s ease-in-out;
+  transition:
+    color 0.1s ease-in-out,
+    transform 0.1s ease-in-out,
+    background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out,
+    opacity 0.1s ease-in-out;
 }
 
 ::before,
@@ -56,8 +48,8 @@ html {
 }
 
 /* # =================================================================
-   # General elements
-   # ================================================================= */
+     # General elements
+     # ================================================================= */
 
 hr {
   overflow: visible;
@@ -98,6 +90,7 @@ abbr[title] {
 }
 
 a {
+  text-decoration: none;
   background-color: transparent;
   /* Remove the gray background on active links in IE 10 */
 }
@@ -146,6 +139,8 @@ sup {
 }
 
 table {
+  border-collapse: collapse;
+  border-spacing: 0;
   border-color: inherit;
   /* Correct border color in all Chrome, Edge, and Safari. */
   text-indent: 0;
@@ -157,8 +152,8 @@ iframe {
 }
 
 /* # =================================================================
-   # Forms
-   # ================================================================= */
+     # Forms
+     # ================================================================= */
 
 input {
   border-radius: 0;
@@ -314,10 +309,11 @@ legend {
 }
 
 /* # =================================================================
-   # Specify media element style
-   # ================================================================= */
+     # Specify media element style
+     # ================================================================= */
 
 img {
+  user-select: none;
   border-style: none;
   /* Remove border when inside `a` element in IE 8/9/10 */
 }
@@ -328,8 +324,8 @@ progress {
 }
 
 /* # =================================================================
-   # Accessibility
-   # ================================================================= */
+     # Accessibility
+     # ================================================================= */
 
 /* Specify the progress cursor of updating elements */
 [aria-busy="true"] {
